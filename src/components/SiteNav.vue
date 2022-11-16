@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div v-show="showMenu">
-                    <h3 class="hidden bg-black font-light rounded-full p-3 text-3xl tracking-widest transition-all duration-500 lg:block">
+                    <h3 class="hidden bg-black font-light rounded-full p-3 text-3xl tracking-wider transition-all duration-500 sm:block md:tracking-widest">
                         architecture<Featured />
                     </h3>
                 </div>
@@ -21,7 +21,7 @@
                     </div>
                 </router-link>
                 <div v-show="showMenu">
-                    <h3 class="hidden bg-black font-light rounded-full py-3 px-4 text-3xl tracking-widest transition-all duration-500 lg:block">
+                    <h3 class="hidden bg-black font-light rounded-full py-3 px-4 text-3xl tracking-wider transition-all duration-500 sm:block md:tracking-widest">
                         engineering
                     </h3>
                 </div>
