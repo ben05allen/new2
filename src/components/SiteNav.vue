@@ -4,10 +4,10 @@
             <div class="flex flex-row items-center justify-between font-Plus drop-shadow-xl text-3xl">
                 <div class="bg-black rounded-full p-3 w-16 text-center text-4xl cursor-pointer transition-all duration-500 active:text-black">
                     <div v-if=showMenu>
-                        <svg height="48" width="48" @click="$emit('menuToggle')" class="fill-white hover:fill-slate-200"><path d="M7.3 34.1V33h33.4v1.1Zm0-9.55v-1.1h33.4v1.1Zm0-9.55v-1.1h33.4V15Z"/></svg>
+                        <svg height="48" width="48" @click="$emit('menuToggle')" class="fill-white hover:fill-slate-200"><path d="m 7.2957811,34.853101 0.015931,-0.902857 33.3306065,-0.02415 0.04803,0.881867 z M 7.3,25.007148 l -0.033582,-1.074589 33.4495245,-0.01921 -0.0018,1.058029 z M 7.3,15 V 13.9 H 40.7 V 15 Z"/></svg>
                     </div>
                     <div v-else>
-                        <svg height="48" width="48" @click="$emit('menuToggle')" class="fill-white hover:fill-red-100 bg-gray-900 rounded-xl"><path d="m12.7 36.1-.8-.8L23.2 24 11.9 12.7l.8-.8L24 23.2l11.3-11.3.8.8L24.8 24l11.3 11.3-.8.8L24 24.8Z"/></svg>
+                        <svg height="48" width="48" @click="$emit('menuToggle')" class="fill-white hover:fill-red-200 bg-gray-900 rounded-xl"><path d="m12.7 36.1-.8-.8L23.2 24 11.9 12.7l.8-.8L24 23.2l11.3-11.3.8.8L24.8 24l11.3 11.3-.8.8L24 24.8Z"/></svg>
                     </div>
                 </div>
                 <div v-show="showMenu">
