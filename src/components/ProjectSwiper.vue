@@ -49,7 +49,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -57,27 +57,4 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 
-
-
-// import required modules
-import { FreeMode, Thumbs, Navigation } from "swiper";
-
-export default {
-    name: 'Project',
-    components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    let thumbsSwiper = null;
-
-    const setThumbsSwiper = (swiper) => {
-      thumbsSwiper = swiper;
-    }
-
-    return {
-      modules: [FreeMode,Navigation,Thumbs],
-    };
-  }
-};
 </script>

@@ -6,24 +6,17 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue';
+import { register } from 'swiper/element/bundle';
 import SiteNav from "@/components/SiteNav"
 import HiddenNav from '@/components/HiddenNav'
 
-export default {
-  data() {
-    return {
-      showMenu: true
-    }
-  },
-  methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu
-    }
-  },
-  components: {
-    SiteNav,
-    HiddenNav,
-  },
-}
+register();
+
+const showMenu = ref(true);
+
+const toggleMenu = () => {
+    showMenu.value = !showMenu.value;
+};
 </script>

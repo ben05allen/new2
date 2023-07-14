@@ -11,13 +11,10 @@
     </div>
 </template>
 
-<script>
+<script setup>
 
-export default {
-    name: "SiteNav",
-    props: {
+    const props = defineProps ({
         showMenu: Boolean
-    }
-}
+    })
 
 </script>
