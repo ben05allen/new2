@@ -1,11 +1,9 @@
 <template>
     <div class="flex flex-col mt-36 bg-black items-center">
         
-         <swiper 
+         <swiper-container
             :spaceBetween="10"
             :navigation="true"
-            :thumbs="{ swiper: thumbsSwiper }"
-            :modules="modules"
             class="mySwiper2"
             >
             <swiper-slide>
@@ -20,14 +18,12 @@
             <swiper-slide>
                 <img src="@/../public/feature_batch.webp" class="w-full object-cover" alt="Designer Kitchen">
             </swiper-slide>
-        </swiper>
-        <swiper
-            @swiper="setThumbsSwiper"
+        </swiper-container>
+        <swiper-container
             :spaceBetween="10"
             :slidesPerView="4"
             :freeMode="true"
             :watchSlidesProgress="true"
-            :modules="modules"
             class="mySwiper"
         >
         <swiper-slide>
@@ -42,19 +38,9 @@
             <swiper-slide>
                 <img src="@/../public/feature_batch.webp" class="w-full object-cover" alt="Designer Kitchen">
             </swiper-slide>
-        </swiper>
+        </swiper-container>
         <h3 class="text-white tracking-widest font-light lowercase text-center my-6 text-5xl">
             Featured Projects
         </h3>
     </div>
 </template>
-
-<script setup>
-
-import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/free-mode";
-
-</script>

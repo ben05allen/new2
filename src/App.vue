@@ -6,11 +6,11 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import { register } from 'swiper/element/bundle';
-import SiteNav from "@/components/SiteNav"
-import HiddenNav from '@/components/HiddenNav'
+import SiteNav from "@/components/SiteNav.vue";
+import HiddenNav from "@/components/HiddenNav.vue";
 
 register();
 

@@ -14,16 +14,10 @@
             class="mySwiper w-full py-12"
             >
             <swiper-slide>
-                <img src="@/../public/feature_kitchen.webp" class="w-full object-cover" alt="Designer Kitchen">
+                <img src="/feature_kitchen.webp" class="w-full object-cover" alt="Designer Kitchen">
             </swiper-slide>
             <swiper-slide>
-                <img src="@/../public/feature_batch.webp" class="w-full object-cover" alt="Living the dream">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="@/../public/feature_kitchen.webp" class="w-full object-cover" alt="Designer Kitchen">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="@/../public/feature_batch.webp" class="w-full object-cover" alt="Living the dream">
+                <img src="/feature_batch.webp" class="w-full object-cover" alt="Living the dream">
             </swiper-slide>
         </swiper-container>
 
